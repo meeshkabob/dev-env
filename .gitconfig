@@ -1,0 +1,24 @@
+[alias]
+        qc = commit --no-verify
+        cob = checkout -b
+        reset1 = reset --soft HEAD~1
+        db = branch -D
+        up = !git fetch origin && git prune origin && git remote prune origin && git rebase --autostash
+        co = checkout
+        cp = cherry-pick
+        br = branch
+        ci = commit
+        st = status
+        last = log -1 HEAD
+        praise = blame
+        reabse = rebase
+        clean-all = !git clean -Xfd `git rev-parse --show-cdup`; git clean -fd `git rev-parse --show-cdup`
+        hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+        ls = ls-files
+        ls-ignored = !git ls-files --others -i --exclude-standard --directory
+
+[user]
+  email = xxx@xxx.com
+	name = xxx xxx
