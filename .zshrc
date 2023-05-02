@@ -98,3 +98,23 @@ fi
 
 # https://github.com/microsoft/vscode/issues/165225#issuecomment-1441278432
 #ulimit -v $((50*1024*1024))
+
+
+###############################
+# Basic Commands
+###############################
+alias sourcezshrc='source ~/.zshrc'
+alias ll='ls -la'
+alias whatsmyip='ipconfig getifaddr en0'
+alias viAliases='cd $ZSH_CUSTOM && vi aliases.zsh'
+
+###############################
+# Orphaned Process Cleanup
+###############################
+alias killCodeHelper='pkill -f "Code Helper"'
+alias killNode='pkill -f node'
+
+###########################
+# Misc
+###########################
+alias clearDns='sudo killall -HUP mDNSResponder; sleep 2; echo macOS DNS Cache Reset | say'
